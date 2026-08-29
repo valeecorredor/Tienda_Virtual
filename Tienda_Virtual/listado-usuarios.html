@@ -194,7 +194,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="navbar-user-name">Usuario</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -284,7 +284,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="#" onclick="logout(); return false;">Logout</a>
                 </div>
             </div>
         </div>
@@ -300,11 +300,13 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Los estudiantes deben agregar aquí el JavaScript para cargar usuarios desde la API -->
-    <script>
-        // TODO: Implementar carga de usuarios desde API GET /api/usuarios
-        // Mostrar en la tabla con botones de editar y eliminar
-    </script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Auth script -->
+    <script src="js/auth.js"></script>
+    
+    <!-- Script del modulo -->
+    <script src="js/listado-usuarios.js"></script>
 
 </body>
 
